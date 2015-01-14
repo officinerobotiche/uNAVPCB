@@ -1,0 +1,34 @@
+3V3 PSU:
+	
+- AP3417CKTR-G1 : 0,3€
+	-> http://diodes.com/datasheets/AP3417C.pdf
+	-> http://www.digikey.it/product-detail/it/AP3417CKTR-G1/AP3417CKTR-G1DICT-ND/4505308
+
+- 2,2uH inductor : 0,26€
+	->	http://www.abracon.com/Magnetics/power/ASMPH-0805.pdf
+	-> http://www.digikey.it/product-detail/it/ASMPH-0805-2R2M-T/535-12272-1-ND/4214872
+
+- 10uF 10V 20% X7R 0805 : 0,12€
+	-> http://www.digikey.it/product-detail/it/GRM21BR71A106MA73L/490-10517-1-ND/5026448
+
+
+
+
+
+
+Varie
+
+
+- Xtal 10MHZ 8PF SMD
+	-> http://www.digikey.it/product-detail/it/7V-10.000MAAV-T/887-1791-1-ND/3586039
+	-> http://www.txccrystal.com/images/pdf/7v.pdf
+
+!!- Xtal NX5032GA-10.000000MHZ-LN-CD-1 10MHZ 8PF SMD : 0,52€
+!!	-> http://www.digikey.it/product-detail/it/NX5032GA-10.000000MHZ-LN-CD-1/644-1033-1-ND/1128905
+
+
+
+
+
+- IC EEPROM 16KBIT 1MHZ SOT23-5 AT24C16D-STUM-T
+	-> http://www.digikey.it/product-detail/it/AT24C16D-STUM-T/AT24C16D-STUM-TCT-ND/5055821
