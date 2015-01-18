@@ -10649,6 +10649,12 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="100nF/S"/>
+<part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="100nF/S"/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="GND32" library="supply1" deviceset="GND" device=""/>
+<part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10918,6 +10924,24 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </instance>
 <instance part="GND21" gate="1" x="78.74" y="57.15" smashed="yes">
 <attribute name="VALUE" x="81.28" y="55.88" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="C18" gate="G$1" x="85.09" y="67.31" smashed="yes">
+<attribute name="NAME" x="83.82" y="59.69" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="C19" gate="G$1" x="90.17" y="67.31" smashed="yes">
+<attribute name="NAME" x="88.9" y="59.69" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="GND22" gate="1" x="85.09" y="59.69" smashed="yes">
+<attribute name="VALUE" x="87.63" y="58.42" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="GND32" gate="1" x="90.17" y="59.69" smashed="yes">
+<attribute name="VALUE" x="92.71" y="58.42" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="+3V13" gate="G$1" x="85.09" y="72.39" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="87.63" y="73.66" size="1.27" layer="96" rot="MR0"/>
+</instance>
+<instance part="+3V14" gate="G$1" x="90.17" y="72.39" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="92.71" y="73.66" size="1.27" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -11424,6 +11448,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <wire x1="78.74" y1="69.85" x2="78.74" y2="72.39" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="1"/>
+<pinref part="+3V13" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="1"/>
+<pinref part="+3V14" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -11616,6 +11648,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="78.74" y1="59.69" x2="78.74" y2="62.23" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<pinref part="GND32" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="TX2" class="0">
