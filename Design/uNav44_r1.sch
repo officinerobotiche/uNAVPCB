@@ -8521,6 +8521,14 @@ href="http://www.txccrystal.com/images/pdf/7v.pdf"&gt;http://www.txccrystal.com/
 <text x="-1.7" y="1.4" size="0.75" layer="25">&gt;NAME</text>
 <text x="-1.7" y="-2.1" size="0.75" layer="27">&gt;VALUE</text>
 </package>
+<package name="C0R-JUMP-4">
+<smd name="1" x="0" y="0.9398" dx="0.8" dy="0.95" layer="1" roundness="100"/>
+<smd name="2" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="50"/>
+<smd name="3" x="0" y="-0.9398" dx="0.8" dy="0.95" layer="1" roundness="100" rot="R180"/>
+<text x="1.27" y="0" size="1.016" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="2.286" y="0" size="0.6096" layer="27" font="vector" rot="R90" align="center">&gt;VALUE</text>
+<smd name="4" x="-0.9652" y="0" dx="0.8" dy="0.95" layer="1" roundness="100" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP6G01T-E/OT">
@@ -8600,6 +8608,38 @@ href="http://diodes.com/datasheets/AP3417C.pdf"&gt;http://diodes.com/datasheets/
 <wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <text x="-2.54" y="5.08" size="1.9304" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-2.54" y="2.54" size="1.27" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+<symbol name="0RJM-4">
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.254" x2="0" y2="0.254" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.254" y1="-1.27" x2="0.254" y2="-1.27" width="0.508" layer="94" curve="-180" cap="flat"/>
+<pin name="2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
+<text x="-2.54" y="-2.54" size="1.9304" layer="95" ratio="10" rot="SR90">&gt;NAME</text>
+<wire x1="0" y1="0.254" x2="0" y2="-0.254" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="-1.27" y1="0.254" x2="-1.27" y2="-0.254" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="1.27" x2="-0.254" y2="1.27" width="0.508" layer="94" curve="-180" cap="flat"/>
+<pin name="4" x="-2.54" y="0" visible="off" length="point" direction="pas" rot="R270"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="JMP">
+<wire x1="0.762" y1="-0.254" x2="0.508" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.254" y1="-0.254" x2="-0.254" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.508" y1="-0.254" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-2.286" x2="0.508" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.254" y1="-2.286" x2="-0.254" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.508" y1="-2.286" x2="-0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-0.254" x2="0.762" y2="-0.508" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="-1.016" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-1.524" x2="0.762" y2="-1.778" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-2.032" x2="0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-2.286" x2="-0.762" y2="-2.032" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-1.524" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="-0.762" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<rectangle x1="-0.508" y1="-2.032" x2="0.508" y2="-0.508" layer="94" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8695,6 +8735,25 @@ href="http://www.digikey.it/product-detail/it/7V-10.000MAAV-T/887-1791-1-ND/3586
 <connect gate="G$2" pin="GND" pad="2 4"/>
 <connect gate="G$2" pin="X1" pad="1"/>
 <connect gate="G$2" pin="X2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0R-JUMP-4" prefix="JP" uservalue="yes">
+<gates>
+<gate name="-0R" symbol="0RJM-4" x="0" y="0"/>
+<gate name="G$2" symbol="JMP" x="5.08" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="C0R-JUMP-4">
+<connects>
+<connect gate="-0R" pin="1" pad="1"/>
+<connect gate="-0R" pin="2" pad="2"/>
+<connect gate="-0R" pin="3" pad="3"/>
+<connect gate="-0R" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10698,10 +10757,6 @@ Reflow soldering&lt;p&gt;</description>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="100K/S 1%"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10uF 10V X7R"/>
-<part name="JMP1" library="jump-0r-smd" deviceset="0R-JUMP" device="C"/>
-<part name="JMP2" library="jump-0r-smd" deviceset="0R-JUMP" device="C"/>
-<part name="JMP3" library="jump-0r-smd" deviceset="0R-JUMP" device="C"/>
-<part name="JMP4" library="jump-0r-smd" deviceset="0R-JUMP" device="C"/>
 <part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="H2" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
@@ -10742,6 +10797,10 @@ Reflow soldering&lt;p&gt;</description>
 <part name="JMP6" library="jump-0r-smd" deviceset="0R-JUMP" device="C" value="0R-JUMPC"/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
+<part name="JP2" library="OfficineRobotiche" deviceset="0R-JUMP-4" device=""/>
+<part name="JP3" library="OfficineRobotiche" deviceset="0R-JUMP-4" device=""/>
+<part name="JP4" library="OfficineRobotiche" deviceset="0R-JUMP-4" device=""/>
+<part name="JP5" library="OfficineRobotiche" deviceset="0R-JUMP-4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10984,22 +11043,6 @@ Reflow soldering&lt;p&gt;</description>
 <attribute name="NAME" x="157.48" y="85.3186" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="154.94" y="80.518" size="1.27" layer="96" font="vector"/>
 </instance>
-<instance part="JMP1" gate="-0R" x="25.4" y="76.2" smashed="yes">
-<attribute name="NAME" x="21.59" y="71.12" size="1.27" layer="95" font="vector" rot="R90"/>
-</instance>
-<instance part="JMP1" gate="G$2" x="22.86" y="78.74" smashed="yes"/>
-<instance part="JMP2" gate="-0R" x="109.22" y="76.2" smashed="yes">
-<attribute name="NAME" x="105.41" y="71.12" size="1.27" layer="95" font="vector" rot="R90"/>
-</instance>
-<instance part="JMP2" gate="G$2" x="106.68" y="78.74" smashed="yes"/>
-<instance part="JMP3" gate="-0R" x="109.22" y="48.26" smashed="yes">
-<attribute name="NAME" x="105.41" y="41.91" size="1.27" layer="95" font="vector" rot="R90"/>
-</instance>
-<instance part="JMP3" gate="G$2" x="106.68" y="50.8" smashed="yes"/>
-<instance part="JMP4" gate="-0R" x="109.22" y="17.78" smashed="yes">
-<attribute name="NAME" x="105.41" y="11.43" size="1.27" layer="95" font="vector" rot="R90"/>
-</instance>
-<instance part="JMP4" gate="G$2" x="106.68" y="20.32" smashed="yes"/>
 <instance part="+3V11" gate="G$1" x="72.39" y="74.93" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="74.93" y="76.2" size="1.27" layer="96" font="vector" rot="MR0"/>
 </instance>
@@ -11043,6 +11086,18 @@ Reflow soldering&lt;p&gt;</description>
 </instance>
 <instance part="GND36" gate="1" x="40.64" y="38.1" smashed="yes">
 <attribute name="VALUE" x="43.18" y="36.83" size="1.27" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="JP2" gate="-0R" x="25.4" y="76.2" smashed="yes">
+<attribute name="NAME" x="22.86" y="73.66" size="1.9304" layer="95" ratio="10" rot="SR180"/>
+</instance>
+<instance part="JP3" gate="-0R" x="109.22" y="76.2" smashed="yes">
+<attribute name="NAME" x="106.68" y="73.66" size="1.9304" layer="95" ratio="10" rot="SR180"/>
+</instance>
+<instance part="JP4" gate="-0R" x="109.22" y="48.26" smashed="yes">
+<attribute name="NAME" x="106.68" y="45.72" size="1.9304" layer="95" ratio="10" rot="SR180"/>
+</instance>
+<instance part="JP5" gate="-0R" x="109.22" y="17.78" smashed="yes">
+<attribute name="NAME" x="106.68" y="15.24" size="1.9304" layer="95" ratio="10" rot="SR180"/>
 </instance>
 </instances>
 <busses>
@@ -11261,6 +11316,11 @@ Reflow soldering&lt;p&gt;</description>
 <label x="55.88" y="10.16" size="0.8128" layer="95" font="vector" rot="MR0" xref="yes"/>
 <pinref part="SV2" gate="G$1" pin="20"/>
 </segment>
+<segment>
+<wire x1="104.14" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
+<label x="104.14" y="17.78" size="0.8128" layer="95" font="vector" ratio="13" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="-0R" pin="4"/>
+</segment>
 </net>
 <net name="IO3" class="0">
 <segment>
@@ -11272,6 +11332,11 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="60.96" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
 <label x="55.88" y="12.7" size="0.8128" layer="95" font="vector" rot="MR0" xref="yes"/>
 <pinref part="SV2" gate="G$1" pin="18"/>
+</segment>
+<segment>
+<wire x1="106.68" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
+<label x="104.14" y="48.26" size="0.8128" layer="95" font="vector" ratio="13" rot="R180" xref="yes"/>
+<pinref part="JP4" gate="-0R" pin="4"/>
 </segment>
 </net>
 <net name="IO2" class="0">
@@ -11309,6 +11374,11 @@ Reflow soldering&lt;p&gt;</description>
 <label x="81.28" y="12.7" size="0.8128" layer="95" font="vector" rot="MR180" xref="yes"/>
 <pinref part="SV2" gate="G$1" pin="17"/>
 </segment>
+<segment>
+<wire x1="106.68" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="101.6" y="76.2" size="0.8128" layer="95" font="vector" ratio="13" rot="R180" xref="yes"/>
+<pinref part="JP3" gate="-0R" pin="4"/>
+</segment>
 </net>
 <net name="IO6" class="0">
 <segment>
@@ -11320,6 +11390,11 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="76.2" y1="15.24" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
 <label x="81.28" y="15.24" size="0.8128" layer="95" font="vector" rot="MR180" xref="yes"/>
 <pinref part="SV2" gate="G$1" pin="15"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
+<label x="20.32" y="76.2" size="0.8128" layer="95" font="vector" ratio="13" rot="R180" xref="yes"/>
+<pinref part="JP2" gate="-0R" pin="4"/>
 </segment>
 </net>
 <net name="RX2" class="0">
@@ -11506,8 +11581,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="30.48" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 <junction x="25.4" y="80.01"/>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
-<pinref part="JMP1" gate="-0R" pin="1"/>
 <wire x1="25.4" y1="78.74" x2="25.4" y2="80.01" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="-0R" pin="1"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="80.01" x2="114.3" y2="80.01" width="0.1524" layer="91"/>
@@ -11516,8 +11591,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="114.3" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
 <junction x="109.22" y="80.01"/>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<pinref part="JMP2" gate="-0R" pin="1"/>
 <wire x1="109.22" y1="78.74" x2="109.22" y2="80.01" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="-0R" pin="1"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="52.07" x2="114.3" y2="52.07" width="0.1524" layer="91"/>
@@ -11526,8 +11601,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="114.3" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
 <junction x="109.22" y="52.07"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<pinref part="JMP3" gate="-0R" pin="1"/>
 <wire x1="109.22" y1="50.8" x2="109.22" y2="52.07" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="-0R" pin="1"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="21.59" x2="114.3" y2="21.59" width="0.1524" layer="91"/>
@@ -11536,8 +11611,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="114.3" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
 <junction x="109.22" y="21.59"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<pinref part="JMP4" gate="-0R" pin="1"/>
 <wire x1="109.22" y1="20.32" x2="109.22" y2="21.59" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="-0R" pin="1"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="1"/>
@@ -11707,8 +11782,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="30.48" y1="72.39" x2="25.4" y2="72.39" width="0.1524" layer="91"/>
 <junction x="25.4" y="72.39"/>
 <pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="JMP1" gate="-0R" pin="3"/>
 <wire x1="25.4" y1="73.66" x2="25.4" y2="72.39" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="-0R" pin="3"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VSS"/>
@@ -11717,8 +11792,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="114.3" y1="72.39" x2="109.22" y2="72.39" width="0.1524" layer="91"/>
 <junction x="109.22" y="72.39"/>
 <pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="JMP2" gate="-0R" pin="3"/>
 <wire x1="109.22" y1="73.66" x2="109.22" y2="72.39" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="-0R" pin="3"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="VSS"/>
@@ -11727,8 +11802,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="114.3" y1="44.45" x2="109.22" y2="44.45" width="0.1524" layer="91"/>
 <junction x="109.22" y="44.45"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-<pinref part="JMP3" gate="-0R" pin="3"/>
 <wire x1="109.22" y1="45.72" x2="109.22" y2="44.45" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="-0R" pin="3"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="VSS"/>
@@ -11737,8 +11812,8 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="114.3" y1="13.97" x2="109.22" y2="13.97" width="0.1524" layer="91"/>
 <junction x="109.22" y="13.97"/>
 <pinref part="GND31" gate="1" pin="GND"/>
-<pinref part="JMP4" gate="-0R" pin="3"/>
 <wire x1="109.22" y1="15.24" x2="109.22" y2="13.97" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="-0R" pin="3"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
@@ -11939,32 +12014,36 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="237.49" y1="31.75" x2="226.06" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="GAIN_ANA2" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="GSEL"/>
 <wire x1="27.94" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="JMP1" gate="-0R" pin="2"/>
+<label x="30.48" y="76.2" size="1.27" layer="95" font="vector" ratio="15"/>
+<pinref part="JP2" gate="-0R" pin="2"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="GAIN_ANB2" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="GSEL"/>
 <wire x1="111.76" y1="76.2" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="JMP2" gate="-0R" pin="2"/>
+<label x="114.3" y="76.2" size="1.27" layer="95" font="vector" ratio="15"/>
+<pinref part="JP3" gate="-0R" pin="2"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="GAIN_A1" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="GSEL"/>
 <wire x1="111.76" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JMP3" gate="-0R" pin="2"/>
+<label x="114.3" y="48.26" size="1.27" layer="95" font="vector" ratio="15"/>
+<pinref part="JP4" gate="-0R" pin="2"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="GAIN_B1" class="0">
 <segment>
 <pinref part="U4" gate="A" pin="GSEL"/>
 <wire x1="111.76" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="JMP4" gate="-0R" pin="2"/>
+<label x="114.3" y="17.78" size="1.27" layer="95" font="vector" ratio="15"/>
+<pinref part="JP5" gate="-0R" pin="2"/>
 </segment>
 </net>
 <net name="N$21" class="0">
