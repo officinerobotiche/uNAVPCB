@@ -10801,6 +10801,8 @@ Reflow soldering&lt;p&gt;</description>
 <part name="JP3" library="OfficineRobotiche" deviceset="0R-JUMP-4" device=""/>
 <part name="JP4" library="OfficineRobotiche" deviceset="0R-JUMP-4" device=""/>
 <part name="JP5" library="OfficineRobotiche" deviceset="0R-JUMP-4" device=""/>
+<part name="H4" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
+<part name="GND37" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11329,14 +11331,14 @@ Reflow soldering&lt;p&gt;</description>
 <label x="160.02" y="116.84" size="0.8128" layer="95" font="vector" ratio="13" xref="yes"/>
 </segment>
 <segment>
-<wire x1="60.96" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
-<label x="55.88" y="12.7" size="0.8128" layer="95" font="vector" rot="MR0" xref="yes"/>
-<pinref part="SV2" gate="G$1" pin="18"/>
-</segment>
-<segment>
 <wire x1="106.68" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
 <label x="104.14" y="48.26" size="0.8128" layer="95" font="vector" ratio="13" rot="R180" xref="yes"/>
 <pinref part="JP4" gate="-0R" pin="4"/>
+</segment>
+<segment>
+<wire x1="60.96" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
+<label x="55.88" y="20.32" size="0.8128" layer="95" font="vector" rot="MR0" xref="yes"/>
+<pinref part="SV2" gate="G$1" pin="12"/>
 </segment>
 </net>
 <net name="IO2" class="0">
@@ -11411,9 +11413,8 @@ Reflow soldering&lt;p&gt;</description>
 </net>
 <net name="IO0" class="0">
 <segment>
-<wire x1="60.96" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
-<label x="55.88" y="20.32" size="0.8128" layer="95" font="vector" rot="MR0" xref="yes"/>
-<pinref part="SV2" gate="G$1" pin="12"/>
+<wire x1="55.88" y1="5.08" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
+<label x="50.8" y="5.08" size="0.8128" layer="95" font="vector" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -11566,13 +11567,13 @@ Reflow soldering&lt;p&gt;</description>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 <wire x1="73.66" y1="40.64" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 <label x="81.28" y="30.48" size="0.8128" layer="95" font="vector" rot="MR180" xref="yes"/>
 <wire x1="78.74" y1="30.48" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="38.1" x2="78.74" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="38.1" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
-<junction x="78.74" y="30.48"/>
+<wire x1="78.74" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="G$1" pin="3"/>
+<junction x="78.74" y="30.48"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="80.01" x2="30.48" y2="80.01" width="0.1524" layer="91"/>
@@ -12369,6 +12370,13 @@ SWITCHING SUPPLY</text>
 <instance part="GND34" gate="1" x="142.24" y="58.42" smashed="yes">
 <attribute name="VALUE" x="139.7" y="55.88" size="1.27" layer="96"/>
 </instance>
+<instance part="H4" gate="G$1" x="210.82" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="210.2358" y="96.774" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="213.2838" y="96.774" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="GND37" gate="1" x="210.82" y="86.36" smashed="yes">
+<attribute name="VALUE" x="213.36" y="85.09" size="1.27" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12539,6 +12547,11 @@ SWITCHING SUPPLY</text>
 <pinref part="VR1" gate="G$1" pin="GND"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="142.24" y1="60.96" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="H4" gate="G$1" pin="MOUNT"/>
+<pinref part="GND37" gate="1" pin="GND"/>
+<wire x1="210.82" y1="88.9" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
