@@ -28,10 +28,10 @@
 	- http://www.digikey.it/product-detail/it/7V-10.000MAAV-T/887-1791-1-ND/3586039
 	- http://www.txccrystal.com/images/pdf/7v.pdf
 ##MCP6G01T-E/OT Selectable Gain Amplifier: 0,45€
-	-http://www.digikey.com/product-detail/en/MCP6G01T-E%2FOT/MCP6G01T-E%2FOTCT-ND/1979730
-	-http://ww1.microchip.com/downloads/en/DeviceDoc/22004b.pdf
+- [DigiKey MCP6G01T-E/OTCT-ND]:http://www.digikey.com/product-detail/en/MCP6G01T-E%2FOT/MCP6G01T-E%2FOTCT-ND/1979730
+- [DATASHEET of MCP6G01T-E/OT]:http://ww1.microchip.com/downloads/en/DeviceDoc/22004b.pdf
 
 
 #Evaluated but discarded
 ##IC EEPROM 16KBIT 1MHZ SOT23-5 AT24C16D-STUM-T
-	- http://www.digikey.it/product-detail/it/AT24C16D-STUM-T/AT24C16D-STUM-TCT-ND/5055821
+- [DigiKey AT24C16D-STUM-TCT-ND]:http://www.digikey.it/product-detail/it/AT24C16D-STUM-T/AT24C16D-STUM-TCT-ND/5055821
