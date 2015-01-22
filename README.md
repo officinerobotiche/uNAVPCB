@@ -5,12 +5,12 @@ This is a project in development by [Officine Robotiche] team.
 
 ###Join on open firmware project [uNAV.X](https://github.com/officinerobotiche/uNAV.X)!!!
 
-![uNAVPCB top](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/preview_Top.png)
+![uNAVPCB top](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/preview.png)
 
 # Hardware features
 - 2 DC motor control (external encoders and double H-bridge are required)
 - size: 4cm x 4cm
-- Breadboard compliant
+- Matrix board with holes 2.54mm compliant
 - Free 256Kb EEPROM in I2C 
 - Voltage input *(Max 23V to 6V)*
 - 2 internal regulators:
