@@ -5,7 +5,10 @@ This is a project in development by [Officine Robotiche] team.
 
 ###Join on open firmware project [uNAV.X](https://github.com/officinerobotiche/uNAV.X)!!!
 
-![uNAVPCB top](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/preview.png)
+![uNAVPCB Silkscreen Top](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/Board_uNAV44_r1_Silk_Top.png)
+![uNAVPCB Silkscreen Bottom](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/Board_uNAV44_r1_Silk_Bottom.png)
+![uNAVPCB Silkscreen PCB Top](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/Board_uNAV44_r1_PCB_Top.png)
+![uNAVPCB Silkscreen PCB Bottom](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/Board_uNAV44_r1_PCB_Bottom.png)
 
 # Hardware features
 - 2 DC motor control (external encoders and double H-bridge are required)
