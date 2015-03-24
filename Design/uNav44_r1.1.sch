@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10626,7 +10626,9 @@ Reflow soldering&lt;p&gt;</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="SWITCHING" current="yes"/>
+<variantdef name="SWITCHING"/>
+<variantdef name="LINEAR_3V3"/>
+<variantdef name="LINEAR FULL" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.254" drill="0.3048">
@@ -10709,19 +10711,37 @@ Reflow soldering&lt;p&gt;</description>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0603" value="10K0/S 1%"/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="10K0/S 1%"/>
-<part name="IC4" library="OfficineRobotiche" deviceset="AP6503SP-13" device="'SO-8EP'" value="AP6503SP-13"/>
+<part name="IC4" library="OfficineRobotiche" deviceset="AP6503SP-13" device="'SO-8EP'" value="AP6503SP-13">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="22uF 35V 20% JB 1206"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="100K0/S2 1%"/>
-<part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="100nF/S2"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="100K0/S2 1%">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="100nF/S2">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
 <part name="P+2" library="supply1" deviceset="+12V" device=""/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="10K0/S 1%"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="45K3/S 1%"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0603" value="10K0/S 1%">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0603" value="45K3/S 1%">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="1210" value="15uH 1,2A WE-744773115"/>
+<part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="1210" value="15uH 1,2A WE-744773115">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
 <part name="C13" library="rcl" deviceset="C-EU" device="C1206" value="22uf"/>
-<part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="10nF/S"/>
-<part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="10nF/S2"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="10K0/S 1%"/>
+<part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="10nF/S">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
+<part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="10nF/S2">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="10K0/S 1%">
+<variant name="LINEAR FULL" populate="no"/>
+</part>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="1K/S 1%"/>
@@ -10731,15 +10751,27 @@ Reflow soldering&lt;p&gt;</description>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="LP" library="led" deviceset="LED" device="CHIPLED_0805" value="Green"/>
-<part name="IC3" library="OfficineRobotiche" deviceset="AP3417C" device="SOT-23-5" value="AP3417CK-3.3TRG1"/>
-<part name="L3" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805" value="ASMPH-0805-2R2M-T"/>
+<part name="IC3" library="OfficineRobotiche" deviceset="AP3417C" device="SOT-23-5" value="AP3417CK-3.3TRG1">
+<variant name="LINEAR_3V3" populate="no"/>
+<variant name="LINEAR FULL" populate="no"/>
+</part>
+<part name="L3" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805" value="ASMPH-0805-2R2M-T">
+<variant name="LINEAR_3V3" populate="no"/>
+<variant name="LINEAR FULL" populate="no"/>
+</part>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="453K/S 1%"/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="100K/S 1%"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="453K/S 1%">
+<variant name="LINEAR_3V3" populate="no"/>
+<variant name="LINEAR FULL" populate="no"/>
+</part>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="100K/S 1%">
+<variant name="LINEAR_3V3" populate="no"/>
+<variant name="LINEAR FULL" populate="no"/>
+</part>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10uF 10V X7R"/>
 <part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
@@ -10774,6 +10806,8 @@ Reflow soldering&lt;p&gt;</description>
 </part>
 <part name="VR2" library="Personale" deviceset="MCP1754S" device="" value="MCP1754S-5.0V">
 <variant name="SWITCHING" populate="no"/>
+<variant name="LINEAR_3V3" populate="no"/>
+<variant name="LINEAR FULL" populate="no"/>
 </part>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
@@ -10799,7 +10833,7 @@ Reflow soldering&lt;p&gt;</description>
 <wire x1="251.46" y1="105.41" x2="251.46" y2="72.39" width="0.1524" layer="95" style="longdash"/>
 <wire x1="251.46" y1="72.39" x2="210.82" y2="72.39" width="0.1524" layer="95" style="longdash"/>
 <wire x1="210.82" y1="72.39" x2="210.82" y2="105.41" width="0.1524" layer="95" style="longdash"/>
-<text x="12.7" y="36.83" size="0.8128" layer="95" font="vector">IO7 and IO8 can be used as  Z channel of encoder</text>
+<text x="10.16" y="59.69" size="0.8128" layer="95" font="vector">IO7 and IO8 can be used as  Z channel of encoder</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
