@@ -1,7 +1,7 @@
-# ![Officine Robotiche][Logo] uNAV PCB
-**The first DC motor board in 4cm X 4cm** - PCB boards for uNAV
+# ![Officine Robotiche][Logo] &micro;Nav PCB
+**The first DC motor board in 4cm X 4cm** - PCB boards for &micro;Nav
 
-This is a project in development by [Officine Robotiche] team.
+This is a project in development by [Officine Robotiche] team, the check info at [official &micro;Nav site](http://unav.officinerobotiche.it/).
 
 ###Join on open firmware project [uNAV.X](https://github.com/officinerobotiche/uNAV.X)!!!
 
