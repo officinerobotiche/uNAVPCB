@@ -37,7 +37,7 @@ This is a project in development by [Officine Robotiche] team, the check info at
 - 7 GP I/O (You can add feature remapping pins) 
  
 # Available Shields
-- [uBridge](https://github.com/officinerobotiche/uBridgePCB)
+- [&micro;Bridge](https://github.com/officinerobotiche/uBridgePCB)
 
 # Graphical tool for PID tuning
 - [uNav_PID_Tuner](https://github.com/officinerobotiche/uNav_PID_Tuner)
