@@ -3,6 +3,8 @@
 
 This is a project in development by [Officine Robotiche] team, the check info at [official &micro;Nav site](http://unav.officinerobotiche.it/).
 
+Feel free to ask for help, submit suggestions, satisfy your curiosity on our [**Users Group**](https://groups.google.com/forum/?hl=it#!forum/unav-users)
+
 ###Join on open firmware project [uNAV.X](https://github.com/officinerobotiche/uNAV.X)!!!
 
 ![uNAVPCB Silkscreen Top](https://github.com/officinerobotiche/uNAVPCB/blob/master/Image/Board_uNAV44_r1_Silk_Top.png)
